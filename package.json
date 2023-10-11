@@ -1,0 +1,13 @@
+{
+  "name": "rinha-frontend",
+  "version": "1.0.0",
+  "author": {
+    "name": "Eduardo Barros",
+    "email": "dbarjs@jsbx.dev",
+    "url": "https://github.com/dbarjs"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
