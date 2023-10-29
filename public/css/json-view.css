@@ -1,0 +1,28 @@
+.JsonView {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.JsonView__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.JsonView__tree {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.JsonView__tree div {
+  height: 1.76rem;
+  width: 100%;
+}

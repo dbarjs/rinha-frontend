@@ -2,11 +2,7 @@
   "public": "public",
   "rewrites": [
     {
-      "source": "/js/:file",
-      "destination": "/js/:file"
-    },
-    {
-      "source": "/*",
+      "source": "/",
       "destination": "/index.html"
     }
   ]
