@@ -1,7 +1,7 @@
 export const fileInputElement = document.getElementById(
   "fileInput"
-) as HTMLInputElement;
+) as HTMLInputElement | null;
 export const loadJsonButtonElement = document.getElementById(
   "loadJsonButton"
-) as HTMLButtonElement;
+) as HTMLButtonElement | null;
 export const appElement = document.getElementById("app");

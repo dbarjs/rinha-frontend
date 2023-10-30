@@ -24,6 +24,10 @@ export function useWorker<TWorker extends Worker>(path: string) {
     key: TKey,
     hookEvent: (payload: TPayload) => void | Promise<void>
   ) => void = (key, hookEvent) => {
+    if (!Array.isArray(subscriptions[key as string])) {
+      subscriptions[key as string] = [];
+    }
+
     subscriptions[key as string].push(hookEvent);
   };
 

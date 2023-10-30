@@ -77,7 +77,6 @@
     }
 
     main > button + p {
-      color: var(--error);
       font-size: 1rem;
       font-style: normal;
       font-weight: 400;
@@ -88,8 +87,12 @@
       opacity: 0;
     }
 
-    main.hasError > button + p {
+    p.isVisible {
       opacity: 1;
+    }
+
+    p.hasError {
+      color: var(--error);
     }
 
     main > input {
@@ -120,11 +123,11 @@
         <span>Load JSON</span>
       </button>
 
-      <p>Invalid file. Please load a valid JSON file.</p>
+      <p id="status">...</p>
 
       <input id="fileInput" type="file" id="input" />
     </main>
 
-    <script src="/src/uploadPage.ts" type="module" async></script>
+    <script src="/src/main.ts" type="module" async></script>
   </body>
 </html>

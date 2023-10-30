@@ -12,12 +12,6 @@ export type ParserWorker = Worker<
 
 const worker = createWorker<ParserWorker>();
 
-worker.addAction("upload", (file) => {
-  console.log("upload", file);
-
-  worker.callHook("result", true);
-});
-
 // import { safeParse } from "../utils/safeParse";
 
 // function parse(value: string) {

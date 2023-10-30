@@ -1,7 +1,8 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "./../../tsconfig.base.json",
   "compilerOptions": {
     "lib": ["ES2020", "Webworker", "Webworker.Iterable", "WebWorker.ImportScripts"]
   },
-  "include": ["./**.worker.ts"]
+  "include": ["./**/*.worker.ts", "../utils/**/*.ts", "../types/**/*.ts", "../composables/**/*.ts"]
 }
+  
