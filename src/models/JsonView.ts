@@ -1,11 +1,12 @@
-import { appElement } from "/js/elements.mjs";
-
 export class JsonView {
-  constructor() {
-    this.root = appElement;
-    this.formElement = this.root.innerHTML;
+  root: HTMLElement;
+  inner: HTMLElement;
 
-    this.build();
+  constructor(appElement: HTMLElement) {
+    this.root = appElement;
+    this.inner = document.createElement("div");
+
+    // this.build();
   }
 
   build() {
@@ -17,7 +18,7 @@ export class JsonView {
     this.root.appendChild(this.inner);
   }
 
-  setHeightByKeysCount(keysCount) {
+  setHeightByKeysCount(keysCount: number) {
     const height = keysCount * 16 * 1.76;
     this.root.style.minHeight = `${height}px`;
   }

@@ -2,7 +2,7 @@
 <html lang="en">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rinha Frontend</title>
+  <title>JSON Tree View</title>
   <meta name="description" content="JSON Tree Viewer" />
   <style>
     :root {
@@ -17,16 +17,13 @@
       margin: 0;
     }
 
-    body * {
+    * {
       box-sizing: border-box;
       font-family: var(--font-family);
-    }
-
-    h1,
-    p {
       margin: 0;
     }
-
+  </style>
+  <style>
     main {
       display: flex;
       width: 100%;
@@ -99,18 +96,20 @@
       display: none;
     }
   </style>
-  <link
-    rel="preload"
-    href="css/json-view.css"
-    as="style"
-    onload="this.rel='stylesheet'"
-  />
-  <link
-    rel="stylesheet"
-    href="css/json-view.css"
-    media="print"
-    onload="this.media='all'"
-  />
+
+  <!-- <link
+      rel="preload"
+      href="css/json-view.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="css/json-view.css"
+      media="print"
+      onload="this.media='all'"
+    /> -->
+
   <body>
     <main id="app">
       <h1>JSON Tree Viewer</h1>
@@ -126,6 +125,6 @@
       <input id="fileInput" type="file" id="input" />
     </main>
 
-    <script src="/js/main.mjs" type="module" async></script>
+    <script src="/src/uploadPage.ts" type="module" async></script>
   </body>
 </html>
